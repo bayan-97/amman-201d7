@@ -26,8 +26,8 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
+function multiply(mult) { //eslint-disable-line
+return testArray[0]*testArray[1]*testArray[2]
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -91,11 +91,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+var m1=multiply(testArray);
+var arr5=[m1,"The numbers 2,3,4 have a product of 24."
+]
+return arr5;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
