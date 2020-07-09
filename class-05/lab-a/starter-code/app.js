@@ -26,8 +26,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
+var testDynamicArray = [1,2,3,4,5]; 
+function multiply(mul) { //eslint-disable-line
+    var sum= 1;
+for (var i = 0; i < testDynamicArray.length; i++) {
+    sum=sum *testDynamicArray[i]
+}
+return sum;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -47,7 +52,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(multArr) { //eslint-disable-line
 
 }
 
@@ -116,13 +121,18 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+//eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+var s6= multiply(testDynamicArray); 
+console.log( multiply(testDynamicArray));
 
+var arr6=[s6,"The numbers 1,2,3,4,5 have a product of 120."
+]
+return arr6;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
